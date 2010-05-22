@@ -7,7 +7,7 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (offline version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[Page Titles]]></title>
-		<description lang="en"><![CDATA[This MOD edits the page titles to be much more useful when running multiple tabs and browsers as well as helping your forum SEO as Search Engines do Scan page titles. So instead of {View Topic/Forum} {Forum Name}. Its {Topic/Forum Name} {Forum Name}.]]></description>
+		<description lang="en"><![CDATA[This MOD edits the page titles to be much more useful when running multiple tabs and browsers as well as helping your forum SEO as Search Engines do Scan page titles. So instead of View Topic/Forum Site Name. Its Topic/Forum Name Site Name.]]></description>
 		<author-group>
 			<author>
 				<realname><![CDATA[Michael C.]]></realname>
@@ -36,6 +36,26 @@
 		</history>
 	</header>
 	<action-group>
+		<open src="viewforum.php">
+			<edit>
+				<find><![CDATA[page_header($user->lang['VIEW_FORUM'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></find>
+			</edit>
+			<edit>
+				<action type="replace-with"><![CDATA[page_header($user->lang['forum_name'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></action>
+			</edit>
+		</open>
+		<open src="viewtopic.php">
+			<edit>
+				<find><![CDATA[page_header($user->lang['VIEW_TOPIC'] . ' - ' . $topic_data['topic_title'], true, $forum_id); ]]></find>
+				<action type="replace-with"><![CDATA[page_header($user->lang['topic_name'] . ' - ' .($topic_data['topic_title'], true, $forum_id); ]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.php">
+			<edit>
+				<find><![CDATA[<title>{SITENAME} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{PAGE_TITLE}</title>]]></find>
+				<action type="replace-with"><![CDATA[<title>{PAGE_TITLE} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{SITENAME}</title>]]></action>
+			</edit>
+		</open>
 		<diy-instructions lang="en"><![CDATA[Refresh your cache]]></diy-instructions>
 	</action-group>
 </mod>
