@@ -19,7 +19,7 @@
 				</contributions-group>
 			</author>
 		</author-group>
-		<mod-version>0.0.1</mod-version>
+		<mod-version>1.0.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -33,6 +33,21 @@
 					<change><![CDATA[MODX and Root Created]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2010-05-22</date>
+				<rev-version>0.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Added edits]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-05-23</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Fixed a typo in the viewtopic.php file]]></change>
+				</changelog>
+			</entry>
+
 		</history>
 	</header>
 	<action-group>
