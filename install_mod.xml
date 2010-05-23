@@ -39,15 +39,13 @@
 		<open src="viewforum.php">
 			<edit>
 				<find><![CDATA[page_header($user->lang['VIEW_FORUM'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></find>
-			</edit>
-			<edit>
 				<action type="replace-with"><![CDATA[page_header($user->lang['forum_name'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></action>
 			</edit>
 		</open>
 		<open src="viewtopic.php">
 			<edit>
 				<find><![CDATA[page_header($user->lang['VIEW_TOPIC'] . ' - ' . $topic_data['topic_title'], true, $forum_id); ]]></find>
-				<action type="replace-with"><![CDATA[page_header($user->lang['topic_name'] . ' - ' .($topic_data['topic_title'], true, $forum_id); ]]></action>
+				<action type="replace-with"><![CDATA[page_header($user->lang['TOPIC_NAME'] . ' - ' . $topic_data['topic_title'], true, $forum_id);]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_header.html">
