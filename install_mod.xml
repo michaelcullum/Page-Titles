@@ -14,9 +14,6 @@
 				<username><![CDATA[Unknown Bliss]]></username>
 				<homepage><![CDATA[http://sa007.cz.cc]]></homepage>
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
-				<contributions-group>
-					<contributions status="current" from="22/05/2010" to="Present" position="MOD Developer"/>
-				</contributions-group>
 			</author>
 		</author-group>
 		<mod-version>1.0.0</mod-version>
@@ -47,7 +44,6 @@
 					<change><![CDATA[Fixed a typo in the viewtopic.php file]]></change>
 				</changelog>
 			</entry>
-
 		</history>
 	</header>
 	<action-group>
