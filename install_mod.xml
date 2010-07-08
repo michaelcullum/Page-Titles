@@ -16,7 +16,7 @@
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.0</mod-version>
+		<mod-version>1.0.1</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -44,19 +44,26 @@
 					<change><![CDATA[Fixed a typo in the viewtopic.php file]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2010-07-08</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Edited Edits]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
 		<open src="viewforum.php">
 			<edit>
 				<find><![CDATA[page_header($user->lang['VIEW_FORUM'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></find>
-				<action type="replace-with"><![CDATA[page_header($user->lang['forum_name'] . ' - ' . $forum_data['forum_name'], true, $forum_id); ]]></action>
+				<action type="replace-with"><![CDATA[page_header($forum_data['forum_name'], true, $forum_id); ]]></action>
 			</edit>
 		</open>
 		<open src="viewtopic.php">
 			<edit>
 				<find><![CDATA[page_header($user->lang['VIEW_TOPIC'] . ' - ' . $topic_data['topic_title'], true, $forum_id); ]]></find>
-				<action type="replace-with"><![CDATA[page_header($user->lang['TOPIC_NAME'] . ' - ' . $topic_data['topic_title'], true, $forum_id);]]></action>
+				<action type="replace-with"><![CDATA[page_header($topic_data['topic_title'], true, $forum_id);]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_header.html">
