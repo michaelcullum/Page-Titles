@@ -16,7 +16,7 @@
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.1</mod-version>
+		<mod-version>1.0.2</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -51,7 +51,17 @@
 					<change><![CDATA[Edited Edits]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2010-08-25</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Adding Subsilver]]></change>
+				</changelog>
+			</entry>
 		</history>
+		<link-group> 
+			<link type="template" href="./contrib/subsilver.xml" lang="en">Subsilver Edits</link> 
+		</link-group>	
 	</header>
 	<action-group>
 		<open src="viewforum.php">
