@@ -24,7 +24,7 @@
 		</installation>
 	</header>
 	<action-group>
-		<open src="styles\subsilver2\template\overall_header.html">
+		<open src="styles/subsilver2/template/overall_header.html">
 			<edit>
 				<find><![CDATA[<title>{SITENAME} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{PAGE_TITLE}</title>]]></find>
 				<action type="replace-with"><![CDATA[<title>{PAGE_TITLE} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{SITENAME}</title>]]></action>
