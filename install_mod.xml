@@ -16,11 +16,11 @@
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.3</mod-version>
+		<mod-version>1.0.4</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
-			<target-version>3.0.8</target-version>
+			<target-version>3.0.9</target-version>
 		</installation>
 		<history>
 			<entry>
