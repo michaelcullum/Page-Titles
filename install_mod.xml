@@ -16,11 +16,11 @@
 				<email><![CDATA[sa.chelsea@live.co.uk]]></email>
 			</author>
 		</author-group>
-		<mod-version>1.0.4</mod-version>
+		<mod-version>1.0.5</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
-			<target-version>3.0.9</target-version>
+			<target-version>3.0.10</target-version>
 		</installation>
 		<history>
 			<entry>
@@ -56,6 +56,13 @@
 				<rev-version>1.0.2</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[Adding Subsilver]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-04</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Updating to 3.0.10]]></change>
 				</changelog>
 			</entry>
 		</history>
